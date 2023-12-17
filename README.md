@@ -73,7 +73,7 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
 - Regelmässige manuelle Code Reviews sind entscheidend für die Sicherheitsüberprüfung.
 - Sie können Teile oder die gesamte Applikation abdecken.
-- Statische Testmethode, bei der Entwickler:innen und Sicherheitsexpert:innen potenzielle Schwachstellen, Eingabevalidierung, Authentifizierungsmethoden usw. überprüfen.
+- Statische Testmethode, bei der Entwickler und Sicherheitsexpert potenzielle Schwachstellen, Eingabevalidierung, Authentifizierungsmethoden usw. überprüfen.
 - Die Reviewer:innen sollten die Applikation, den Kontext, die Programmiersprache und Sicherheitsaspekte gut kennen.
 
 #### Automatisierte Sicherheitsprüfungen:
