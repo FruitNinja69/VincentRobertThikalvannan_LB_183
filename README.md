@@ -32,3 +32,5 @@ Fake Stellenangebote locken über soziale Netzwerke und E-Mails mit unrealistisc
 #### Massnahmen
 - Ignorieren Sie diese Art von Nachrichten mit betrügerischen Stellenangeboten
 - Seien Sie vorsichtig bei Jobangeboten, die eine Vorauszahlung verlangen
+
+Quellen: https://www.ncsc.admin.ch/ncsc/de/home/cyberbedrohungen.html 
