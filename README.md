@@ -71,7 +71,7 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
 #### Manueller Code Review:
 
-- Regelmäßige manuelle Code Reviews sind entscheidend für die Sicherheitsüberprüfung.
+- Regelmässige manuelle Code Reviews sind entscheidend für die Sicherheitsüberprüfung.
 - Sie können Teile oder die gesamte Applikation abdecken.
 - Statische Testmethode, bei der Entwickler:innen und Sicherheitsexpert:innen potenzielle Schwachstellen, Eingabevalidierung, Authentifizierungsmethoden usw. überprüfen.
 - Die Reviewer:innen sollten die Applikation, den Kontext, die Programmiersprache und Sicherheitsaspekte gut kennen.
@@ -94,5 +94,13 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 - Checklisten gewährleisten ein konsistentes Vorgehen und verhindern das Vergessen von wichtigen Aspekten.
 - Alle gefundenen Sicherheitsprobleme müssen dokumentiert und verfolgt werden.
 - Verantwortliche sollten bestimmt werden, um sicherzustellen, dass identifizierte Probleme behoben werden.
+
+### Pentest
+
+Pentesting, kurz für "Penetrationstests" ist, wo Experten nach Sicherheitsproblemen in Webapplikationen suchen. Ob das gut klappt, hängt davon ab, wie schlau die Experten sind. Aber hier ist die Sache: Wenn die nix finden, heisst das nicht, dass da wirklich keine Lücken sind.
+
+Vor dem eigentlichen Test liest man sich erstmal alles durch: das Pflichtenheft, den Code alles. Dann setzt man sich Ziele und fängt an zu analysieren. Das bedeutet Scans machen, um Schwachstellen zu finden. Was man findet, wird aufgeschrieben und dem Kunden gezeigt. Nachdem die Probleme gefixt wurden, macht man nochmal so 'nen Test.
+
+Und ganz wichtig: Tools, aber die können Expertenwissen nicht ersetzen. Es gibt so Security-Scanner, die automatisch nach Lücken suchen.
 
 
