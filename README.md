@@ -41,8 +41,14 @@ Quellen: https://www.ncsc.admin.ch/ncsc/de/home/cyberbedrohungen.html
 ### SQL Injection
  In der Insecure App kann man mit Sql Inkection sich als adminsator ausgeben ohne den Passwort zu kennen.
 
+Wenn man beim Einloggen den Benutzernamen nach "administrator" noch die Eingabe von "'--admin" erweitert und ein beliebiges Passwort eingibt, kann man sich als Administrator anmelden.
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/24290165-e643-49d2-8b5e-e1e9776850a2)
+
+
 Das Code ohne SQL Injection:
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/d51cc87e-e0f5-47a4-8feb-e53aa6c6ac02)
+
 Das Code mit SQL Injection:
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/5cb8c06f-b269-4f36-b405-0691fcdfd7d2)
+
 
