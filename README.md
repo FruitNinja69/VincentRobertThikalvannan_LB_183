@@ -25,3 +25,4 @@ Phishing  bezeichnet eine betrügerische Methode, bei der sich Angreifer als Pol
 - Telefonanrufe sofort abrechnen.
 - Nummern blockieren
 - Falls Kreditdaten gesagt --> Karte speren. 
+
