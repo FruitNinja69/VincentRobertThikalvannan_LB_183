@@ -26,3 +26,9 @@ Phishing  bezeichnet eine betrügerische Methode, bei der sich Angreifer als Pol
 - Nummern blockieren
 - Falls Kreditdaten gesagt --> Karte speren. 
 
+### Betrügerische Jobangebote
+Fake Stellenangebote locken über soziale Netzwerke und E-Mails mit unrealistischen Verdienstversprechen, führen die Kommunikation im Einstellungsprozess über Instant Messaging und leiten die Bewerber auf gefälschte Websites weiter, um vermeintliche 'Lohnzahlungen' und 'Prämien' abzurechnen. Meine Freunde und ich haben das selbst bekommen.
+
+#### Massnahmen
+- Ignorieren Sie diese Art von Nachrichten mit betrügerischen Stellenangeboten
+- Seien Sie vorsichtig bei Jobangeboten, die eine Vorauszahlung verlangen
