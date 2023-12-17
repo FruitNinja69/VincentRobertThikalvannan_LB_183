@@ -47,10 +47,10 @@ Wenn man beim Einloggen den Benutzernamen nach "administrator" noch die Eingabe 
 
 
 
-Das Code ohne SQL Injection:
+Der Code ohne SQL Injection:
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/d51cc87e-e0f5-47a4-8feb-e53aa6c6ac02)
 
-Das Code mit SQL Injection:
+Der Code mit SQL Injection:
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/5cb8c06f-b269-4f36-b405-0691fcdfd7d2)
 
 Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
