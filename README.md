@@ -74,7 +74,7 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 - Regelmässige manuelle Code Reviews sind entscheidend für die Sicherheitsüberprüfung.
 - Sie können Teile oder die gesamte Applikation abdecken.
 - Statische Testmethode, bei der Entwickler und Sicherheitsexpert potenzielle Schwachstellen, Eingabevalidierung, Authentifizierungsmethoden usw. überprüfen.
-- Die Reviewer:innen sollten die Applikation, den Kontext, die Programmiersprache und Sicherheitsaspekte gut kennen.
+- Die Reviewer sollte die Applikation, den Kontext, die Programmiersprache und Sicherheitsaspekte gut kennen.
 
 #### Automatisierte Sicherheitsprüfungen:
 
@@ -90,10 +90,9 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
 #### Best Practices:
 
-- Sicherheitsreviews sollten regelmäßig im Entwicklungszyklus durchgeführt werden
+- Sicherheitsreviews sollten regelmässig im Entwicklungszyklus durchgeführt werden
 - Checklisten gewährleisten ein konsistentes Vorgehen und verhindern das Vergessen von wichtigen Aspekten.
 - Alle gefundenen Sicherheitsprobleme müssen dokumentiert und verfolgt werden.
-- Verantwortliche sollten bestimmt werden, um sicherzustellen, dass identifizierte Probleme behoben werden.
 
 ### Pentest
 
