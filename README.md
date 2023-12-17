@@ -45,6 +45,7 @@ Wenn man beim Einloggen den Benutzernamen nach "administrator" noch die Eingabe 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/24290165-e643-49d2-8b5e-e1e9776850a2)
 
 
+
 Das Code ohne SQL Injection:
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/d51cc87e-e0f5-47a4-8feb-e53aa6c6ac02)
 
