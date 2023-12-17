@@ -63,3 +63,36 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 Ähnlich wie bei SQL Injection kann auch bei Cross-Site Scripting (XSS) durch Eingabe von JavaScript-Befehlen in Eingabefelder das Programm gehackt werden. 
 
 
+### Security Code Review
+
+#### Motivation:
+
+- Security Code Review bezieht sich auf die Überprüfung von Softwareanwendungen, um Sicherheitslücken zu identifizieren und zu beheben. Dies umfasst den Code, die Architektur und andere potenzielle Risiken.
+
+#### Manueller Code Review:
+
+- Regelmäßige manuelle Code Reviews sind entscheidend für die Sicherheitsüberprüfung.
+- Sie können Teile oder die gesamte Applikation abdecken.
+- Statische Testmethode, bei der Entwickler:innen und Sicherheitsexpert:innen potenzielle Schwachstellen, Eingabevalidierung, Authentifizierungsmethoden usw. überprüfen.
+- Die Reviewer:innen sollten die Applikation, den Kontext, die Programmiersprache und Sicherheitsaspekte gut kennen.
+
+#### Automatisierte Sicherheitsprüfungen:
+
+- Neben manuellen Reviews sollten automatisierte Sicherheitsprüfungen durchgeführt werden
+- Tools und Scanner identifizieren bekannte Schwachstellen und Konfigurationsfehler.
+- Ergebnisse müssen genau überprüft werden, da nicht alle Hinweise korrekt sein könnten (false positive).
+  
+#### Architektur Reviews
+
+- Architektur ist wichtig für die Sicherheitsüberprüfung
+- Experten prüfen die Gesamtarchitektur auf Schwachstellen und sicherheitsrelevante Designentscheidungen.
+- Der Datenfluss innerhalb der Anwendung wird verfolgt, um sicherzustellen, dass sensible Daten angemessen geschützt sind.
+
+#### Best Practices:
+
+- Sicherheitsreviews sollten regelmäßig im Entwicklungszyklus durchgeführt werden
+- Checklisten gewährleisten ein konsistentes Vorgehen und verhindern das Vergessen von wichtigen Aspekten.
+- Alle gefundenen Sicherheitsprobleme müssen dokumentiert und verfolgt werden.
+- Verantwortliche sollten bestimmt werden, um sicherzustellen, dass identifizierte Probleme behoben werden.
+
+
