@@ -287,7 +287,7 @@ Informationen für Auditing und Logging generieren. Auswertungen und Alarme defi
 m Code wird implementiert, dass bei falschen Benutzerdaten die Meldung "login failed for user '{request.Username}'" in der Konsole angezeigt wird. Wenn die Daten korrekt sind, wird die Meldung "login successful for user '{request.Username}'" angezeigt.
 
 Code:
-``` charp
+``` csharp
 public ActionResult<User> Login(LoginDto request)
 {
     if (request == null || request.Username.IsNullOrEmpty() || request.Password.IsNullOrEmpty())
