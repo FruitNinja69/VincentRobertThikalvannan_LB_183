@@ -183,7 +183,32 @@ if (user.SecretKey2FA != null)
 }
 ``` 
 
-![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/48a51c58-dd41-4a94-842c-31114ec1c338)
+``` csharp
+public ActionResult<Auth2FADto> Enable2FA()
+{
+    var user = _context.Users.Find(_userService.GetUserId());
+    if (user == null)
+    {
+        return NotFound(string.Format("User {0} not found", _userService.GetUsername()));
+    }
+    {
+        var secretKey = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 10);
+        string userUniqueKey = user.Username + secretKey;
+        string issuer = _configuration.GetSection("Jwt:Issuer").Value!;
+        TwoFactorAuthenticator authenticator = new TwoFactorAuthenticator();
+        SetupCode setupInfo = authenticator.GenerateSetupCode(issuer, user.Username, userUniqueKey, false, 3);
+
+        user.SecretKey2FA = secretKey;
+        _context.Update(user);
+        _context.SaveChanges();
+
+        Auth2FADto auth2FADto = new Auth2FADto();
+        auth2FADto.QrCodeSetupImageUrl = setupInfo.QrCodeSetupImageUrl;
+
+        return Ok(auth2FADto);
+    }
+}
+```
 
 Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). Wenn ein Nutzer über einen 2FA-Schlüssel verfügt, wird geprüft, ob der eingegebene Benutzerschlüssekorrekt ist. Bei Misserfolg wird eine "Unauthorized" (401)-Meldung zurückgegeben.
 
@@ -195,8 +220,43 @@ Sicherheitsrelevante Aspekte bei Entwurf, Implementierung und Inbetriebnahme ber
 ### HumanFactor
 Die meisten Menschen wählen ein einfaches Passwort wie zum Beispiel "1234". Dadurch wird der Mensch zur Sicherheitslücke, da er ein leicht zu erratendes Passwort verwendet. Um dies zu vermeiden, verfügt die Insecure App über eine Funktion, die bei der Passworterstellung Variationen verlangt, um das Passwort sicherer zu machen.
 
-![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/6d5b43b7-3c07-422a-ab69-38445d794e48)
+``` csharp
+ private string validateNewPasswort(string newPassword)
+ {
+     // Check small letter.
+     string patternSmall = "[a-zäöü]";
+     Regex regexSmall = new Regex(patternSmall);
+     bool hasSmallLetter = regexSmall.Match(newPassword).Success;
 
+     string patternCapital = "[A-ZÄÖÜ]";
+     Regex regexCapital = new Regex(patternCapital);
+     bool hasCapitalLetter = regexCapital.Match(newPassword).Success;
+
+     string patternNumber = "[0-9]";
+     Regex regexNumber = new Regex(patternNumber);
+     bool hasNumber = regexNumber.Match(newPassword).Success;
+
+     List<string> result = new List<string>();
+     if (!hasSmallLetter)
+     {
+         result.Add("keinen Kleinbuchstaben");
+     }
+     if (!hasCapitalLetter)
+     {
+         result.Add("keinen Grossbuchstaben");
+     }
+     if (!hasNumber)
+     {
+         result.Add("keine Zahl");
+     }
+
+     if (result.Count > 0)
+     {
+         return "Das Passwort beinhaltet " + string.Join(", ", result);
+     }
+     return "";
+ }
+```
 
 ## HZ 5
 
