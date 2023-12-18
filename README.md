@@ -316,5 +316,7 @@ public ActionResult<User> Login(LoginDto request)
 
 Auf der Konsole sind diese Loginformationen ersichtlich:
 
-![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/4b4ddca7-461a-492f-8065-55d889ea27dd)
+
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/55013093-e7a1-40e4-817a-fa55a629c3cc)
+
 
