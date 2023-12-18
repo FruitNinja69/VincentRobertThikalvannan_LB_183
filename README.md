@@ -98,4 +98,14 @@ Vor dem eigentlichen Test liest man sich erstmal alles durch: das Pflichtenheft,
 
 Und ganz wichtig: Tools, aber die können Expertenwissen nicht ersetzen. Es gibt so Security-Scanner, die automatisch nach Lücken suchen.
 
+## HZ 3
+Mechanismen für die Authentifizierung und Autorisierung umsetzen können.
+
+### Authentifizierung
+
+In den Insecure App eine Zwei-Faktor-Authentisierung  welche ermöglicht den Benutzer wenn er eingeloogt ist, das zu aktivieren, wenn er es aktivert wied eine QR-Code generiert und den Benutzer kann das einscannen auf Handy. Man sollte auf Handy den Handy "Google Authenticator" herunterlanden.
+
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/7869d1f7-e9fb-4c2e-98b5-4b0fdf734e3a)
+
+
 
