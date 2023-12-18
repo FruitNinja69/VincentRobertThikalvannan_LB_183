@@ -73,7 +73,38 @@ public ActionResult<User> Login(LoginDto request)
 
 Der Code ohne SQL Injection:
 
-![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/5cb8c06f-b269-4f36-b405-0691fcdfd7d2)
+``` csharp
+ public ActionResult<User> Login(LoginDto request)
+        {
+            if (request == null || request.Username.IsNullOrEmpty() || request.Password.IsNullOrEmpty())
+            {
+                return BadRequest();
+            }
+
+            string username = request.Username;
+            string passwordHash = MD5Helper.ComputeMD5Hash(request.Password);
+
+            /*
+            // Lösungsansatz 1: Sauber interpoliertes SQL
+            User? user = _context.Users.FromSql($"SELECT * FROM Users WHERE username = {username} AND password = {passwordHash}")
+                .FirstOrDefault();
+            */
+
+            // Lösungsansatz 2: EntityFramework Where
+            User? user = _context.Users
+                .Where(u => u.Username == username)
+                .Where(u => u.Password == passwordHash)
+                .FirstOrDefault();
+
+
+            if (user == null)
+            {
+                return Unauthorized("login failed");
+            }
+            return Ok(user);
+        }
+
+```
 
 
 Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
