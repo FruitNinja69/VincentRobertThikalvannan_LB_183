@@ -127,6 +127,15 @@ Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). W
 
 ### Autoriserung
 
+## HZ 4
+Sicherheitsrelevante Aspekte bei Entwurf, Implementierung und Inbetriebnahme berücksichtigen.
 
+### HumanFactor
+Die meisten Menschen wählen ein einfaches Passwort wie zum Beispiel "1234". Dadurch wird der Mensch zur Sicherheitslücke, da er ein leicht zu erratendes Passwort verwendet. Um dies zu vermeiden, verfügt die Insecure App über eine Funktion, die bei der Passworterstellung Variationen verlangt, um das Passwort sicherer zu machen.
+
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/6d5b43b7-3c07-422a-ab69-38445d794e48)
+
+
+## HZ 5
 
 
