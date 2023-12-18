@@ -103,9 +103,14 @@ Mechanismen für die Authentifizierung und Autorisierung umsetzen können.
 
 ### Authentifizierung
 
-In den Insecure App eine Zwei-Faktor-Authentisierung  welche ermöglicht den Benutzer wenn er eingeloogt ist, das zu aktivieren, wenn er es aktivert wied eine QR-Code generiert und den Benutzer kann das einscannen auf Handy. Man sollte auf Handy den Handy "Google Authenticator" herunterlanden.
+In der "Insecure App" ist nun eine Zwei-Faktor-Authentifizierung integriert. Diese ermöglicht es dem Benutzer, sie zu aktivieren, sobald er sich angemeldet hat. Nach der Aktivierung wird ein QR-Code generiert, den der Benutzer mit seinem Handy scannen kann. Es ist erforderlich, die App "Google Authenticator" auf dem Handy herunterzuladen, um diesen Prozess abzuschließen.
 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/7869d1f7-e9fb-4c2e-98b5-4b0fdf734e3a)
+
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/d176b379-22c4-4edd-ac8b-7535707b7149)
+
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/e1568293-127f-4732-9d8b-b7b5be51d92b)
+
 
 
 
