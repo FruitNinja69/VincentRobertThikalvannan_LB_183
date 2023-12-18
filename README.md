@@ -123,8 +123,9 @@ Implentation im Code:
 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/48a51c58-dd41-4a94-842c-31114ec1c338)
 
+Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). Wenn ein Nutzer über einen 2FA-Schlüssel verfügt, wird geprüft, ob der eingegebene Benutzerschlüssekorrekt ist. Bei Misserfolg wird eine "Unauthorized" (401)-Meldung zurückgegeben.
 
-
+### Autoriserung
 
 
 
