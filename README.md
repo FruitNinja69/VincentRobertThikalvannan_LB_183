@@ -213,6 +213,21 @@ public ActionResult<Auth2FADto> Enable2FA()
 Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). Wenn ein Nutzer über einen 2FA-Schlüssel verfügt, wird geprüft, ob der eingegebene Benutzerschlüssekorrekt ist. Bei Misserfolg wird eine "Unauthorized" (401)-Meldung zurückgegeben.
 
 ### Autoriserung
+``` csharp
+ public ActionResult Update(int id, NewsWriteDto request)
+ {
+     if (request == null)
+     {
+         return BadRequest();
+     }
+
+     if (!_userService.IsAdmin() && _userService.GetUserId() != news.AuthorId)
+     {
+         return Forbid();
+     }
+     return Ok();
+ }
+```
 
 ## HZ 4
 Sicherheitsrelevante Aspekte bei Entwurf, Implementierung und Inbetriebnahme berücksichtigen.
