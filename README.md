@@ -94,7 +94,7 @@ Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
 Pentesting, kurz für "Penetrationstests" ist, wo Experten nach Sicherheitsproblemen in Webapplikationen suchen. Ob das gut klappt, hängt davon ab, wie schlau die Experten sind. Aber hier ist die Sache: Wenn die nix finden, heisst das nicht, dass da wirklich keine Lücken sind.
 
-Vor dem eigentlichen Test liest man sich erstmal alles durch: das Pflichtenheft, den Code alles. Dann setzt man sich Ziele und fängt an zu analysieren. Das bedeutet Scans machen, um Schwachstellen zu finden. Was man findet, wird aufgeschrieben und dem Kunden gezeigt. Nachdem die Probleme gefixt wurden, macht man nochmal so 'nen Test.
+Vor dem eigentlichen Test liest man sich erstmal alles durch: das Pflichtenheft, den Code alles. Dann setzt man sich Ziele und fängt an zu analysieren. Das bedeutet Scans machen, um Schwachstellen zu finden. Was man findet, wird aufgeschrieben und dem Kunden gezeigt. Nachdem die Probleme gefixt wurden, macht man nochmal einen Test.
 
 Und ganz wichtig: Tools, aber die können Expertenwissen nicht ersetzen. Es gibt so Security-Scanner, die automatisch nach Lücken suchen.
 
