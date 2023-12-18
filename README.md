@@ -214,20 +214,27 @@ Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). W
 
 ### Autoriserung
 ``` csharp
- public ActionResult Update(int id, NewsWriteDto request)
+  public ActionResult Delete(int id)
  {
-     if (request == null)
+     var news = _context.News.Find(id);
+     if (news == null)
      {
-         return BadRequest();
+         return NotFound(string.Format("News {0} not found", id));
      }
 
      if (!_userService.IsAdmin() && _userService.GetUserId() != news.AuthorId)
      {
          return Forbid();
      }
+
+     _context.News.Remove(news);
+     _context.SaveChanges();
+     
      return Ok();
  }
 ```
+
+Es wird überprüft, ob der Benutzer kein Administrator ist. Wenn der Benutzer ein Administrator ist, hat er automatisch die Erlaubnis. Es wird überprüft, ob die Benutzer-ID der Person, die die Aktion ausführt, nicht mit der ID des Autors der Nachricht übereinstimmt. Wenn die IDs nicht übereinstimmen, bedeutet das, dass die Person nicht der Autor der Nachricht ist. Wenn mindestens eine dieser Bedingungen erfüllt ist, wird die Aktion nicht erlaubt, was bedeutet, dass der Benutzer die Nachricht nicht löschen darf.
 
 ## HZ 4
 Sicherheitsrelevante Aspekte bei Entwurf, Implementierung und Inbetriebnahme berücksichtigen.
