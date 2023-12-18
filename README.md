@@ -59,10 +59,6 @@ Der Code ohne SQL Injection:
 
 Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
-### Cross Site Scripting
-Ähnlich wie bei SQL Injection kann auch bei Cross-Site Scripting (XSS) durch Eingabe von JavaScript-Befehlen in Eingabefelder das Programm gehackt werden. 
-
-
 ### Security Code Review
 
 #### Motivation:
