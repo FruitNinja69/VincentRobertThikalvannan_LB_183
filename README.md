@@ -284,7 +284,7 @@ Die meisten Menschen wählen ein einfaches Passwort wie zum Beispiel "1234". Dad
 
 Informationen für Auditing und Logging generieren. Auswertungen und Alarme definieren und implementieren.
 
-m Code wird implementiert, dass bei falschen Benutzerdaten die Meldung "login failed for user '{request.Username}'" in der Konsole angezeigt wird. Wenn die Daten korrekt sind, wird die Meldung "login successful for user '{request.Username}'" angezeigt.
+Im Code wird implementiert, dass bei falschen Benutzerdaten die Meldung "login failed for user '{request.Username}'" in der Konsole angezeigt wird. Wenn die Daten korrekt sind, wird die Meldung "login successful for user '{request.Username}'" angezeigt.
 
 Code:
 ``` csharp
@@ -315,7 +315,6 @@ public ActionResult<User> Login(LoginDto request)
 
 
 Auf der Konsole sind diese Loginformationen ersichtlich:
-
 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/55013093-e7a1-40e4-817a-fa55a629c3cc)
 
