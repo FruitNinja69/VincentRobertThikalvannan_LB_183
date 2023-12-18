@@ -50,7 +50,27 @@ Wenn man beim Einloggen den Benutzernamen nach "administrator" noch die Eingabe 
 Der Code mit SQL Injection:
 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/d51cc87e-e0f5-47a4-8feb-e53aa6c6ac02)
+``` csharp 
+public ActionResult<User> Login(LoginDto request)
+        {
+            if (request == null || request.Username.IsNullOrEmpty() || request.Password.IsNullOrEmpty())
+            {
+                return BadRequest();
+            }
 
+            string sql = string.Format("SELECT * FROM Users WHERE username = '{0}' AND password = '{1}'", 
+                request.Username, 
+                MD5Helper.ComputeMD5Hash(request.Password));
+
+            User? user= _context.Users.FromSqlRaw(sql).FirstOrDefault();
+            if (user == null)
+            {
+                return Unauthorized("login failed");
+            }
+            return Ok(user);
+        }
+
+```
 
 Der Code ohne SQL Injection:
 
