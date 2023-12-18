@@ -169,7 +169,19 @@ Google Authenticator:
 
 Implentation im Code:
 
-![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/56d218a9-503f-445f-95c0-764ee40b675f)
+``` csharp
+if (user.SecretKey2FA != null)
+{
+    string secretKey = user.SecretKey2FA;
+    string userUniqueKey = user.Username + secretKey;
+    TwoFactorAuthenticator authenticator = new TwoFactorAuthenticator();
+    bool isAuthenticated = authenticator.ValidateTwoFactorPIN(userUniqueKey, request.UserKey);
+    if (!isAuthenticated)
+    {
+        return Unauthorized("login failed");
+    }
+}
+```
 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/48a51c58-dd41-4a94-842c-31114ec1c338)
 
