@@ -64,8 +64,6 @@ Der Code ohne SQL Injection:
 ```
 
 
-Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
-
 ### Auswahl und Beschreibung der Artefakts
 Als Artefakt habe ich einen Teil des Codes aus der Insecure App genommen, der zeigt, wie die App auf SQL-Injection geschützt ist.
 
@@ -76,6 +74,8 @@ Ich habe dieses Ziel erreicht,indem ich Sicherheitslücken und ihre Ursachen in 
 Der erste Code (mit SQL Injection) mischt Benutzereingaben direkt in die SQL-Abfrage, was gefährlich sein kann, weil böswillige Benutzer die Eingabe manipulieren können, um unerwünschte Dinge zu tun.
 
 Der zweite Code (ohne SQL Injection) benutzt sicherere Wege, um die Datenbank abzufragen. Er schützt vor solchen Angriffen, indem er kluge Methoden verwendet, die sicherer sind und die Anwendung besser vor möglichen Gefahren schützen.
+
+Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
 ### Kritische Beurteilung
 Ich habe SQL-Injection erklärt und Maßnahmen dagegen implementiert, aber es gibt auch Cross-Site Scripting (XSS), das im Modul 183 behandelt wird und ähnlich funktioniert. Man kann in den Eingabefeldern JavaScript-Befehle eingeben, was eine häufige Sicherheitslücke darstellt.
