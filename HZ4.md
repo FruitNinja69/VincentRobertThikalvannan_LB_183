@@ -52,3 +52,4 @@ Ich habe diese Handlungsziel umgesetzt, indem ich die Insecure App gegen den men
 Der Code-Abschnitt zeigt, wie das Programm vor einfachen Passwörtern, wie zum Beispiel "1234", geschützt ist. So wurde die Anwendung gegen die Verwendung von schwachen Passwörtern abgesichert.
 
 ### Kritische Beurteilung
+Bei diesen Handlungsziel habe ich neues gelernt, weil ich oft auch aus faulheit eine einfaches Passwort nehme ......
