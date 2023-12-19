@@ -59,7 +59,6 @@ public ActionResult<Auth2FADto> Enable2FA()
     }
 }
 ```
-
 Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). Wenn ein Nutzer über einen 2FA-Schlüssel verfügt, wird geprüft, ob der eingegebene Benutzerschlüssekorrekt ist. Bei Misserfolg wird eine "Unauthorized" (401)-Meldung zurückgegeben.
 
 ### Autoriserung
@@ -84,4 +83,20 @@ Im Beginn des Anmeldevorgangs erfolgt die Zwei-Faktor-Authentifizierung (2FA). W
  }
 ```
 
-Es wird überprüft, ob der Benutzer kein Administrator ist. Wenn der Benutzer ein Administrator ist, hat er automatisch die Erlaubnis. Es wird überprüft, ob die Benutzer-ID der Person, die die Aktion ausführt, nicht mit der ID des Autors der Nachricht übereinstimmt. Wenn die IDs nicht übereinstimmen, bedeutet das, dass die Person nicht der Autor der Nachricht ist. Wenn mindestens eine dieser Bedingungen erfüllt ist, wird die Aktion nicht erlaubt, was bedeutet, dass der Benutzer die Nachricht nicht löschen darf.
+### Auswahl und Beschreibung der Artefakts
+Als Artefakt habe ich einen Teil des Codes aus der Insecure App genommen, der zeigt, wie die App Mechanismen für die Authentifizierung und Autorisierung haben.Ich habe auch einen Teil der App gezeigt, um zu verdeutlichen, wie der Anmeldeprozess und der QR-Code aussehen. Darüber hinaus habe ich auch den Code für Google Authenticator hinzugefügt, um zu zeigen, wie er aussieht.
+
+### Nachweis der Zielreichung 
+Ich habe dieses Ziel erreicht, indem ich dem Insecure App die Zwei-Faktor-Authentifizierung (2FA) hinzugefügt habe. Die Autorisierung wird ebenfalls umgesetzt, indem ich in der Funktion "Delete" überprüfe, ob der Benutzer als Administrator angemeldet ist oder nicht. Damit habe ich Mechanismen für die Authentifizierung und Autorisierung erfolgreich implementiert.
+
+### Erklärung des Artefakts
+#### Autoriserung
+Im Code-Abschnitt wird überprüft, ob der Benutzer kein Administrator ist. Wenn der Benutzer ein Administrator ist, hat er automatisch die Erlaubnis. Es wird überprüft, ob die Benutzer-ID der Person, die die Aktion ausführt, nicht mit der ID des Autors der Nachricht übereinstimmt. Wenn die IDs nicht übereinstimmen, bedeutet das, dass die Person nicht der Autor der Nachricht ist. Wenn mindestens eine dieser Bedingungen erfüllt ist, wird die Aktion nicht erlaubt, was bedeutet, dass der Benutzer die Nachricht nicht löschen darf.
+
+#### Authentifizierung
+Der erste Codeabschnitt überprüft, ob der Benutzer die Zwei-Faktor-Authentifizierung (2FA) aktiviert hat und authentifiziert den Benutzer basierend auf dem eingegebenen 2FA-Schlüssel.
+
+Der zweite Codeabschnitt ermöglicht die Aktivierung der 2FA für einen Benutzer, indem ein neuer geheimer Schlüssel generiert und ein QR-Code erstellt wird. Im Erfolgsfall gibt er den QR-Code zurück.
+
+### Kritische Beurteilung
+Bei diesen Handlungsziel habe ich neues gelernt, weil ich oft auch aus faulheit eine einfaches Passwort nehme ......
