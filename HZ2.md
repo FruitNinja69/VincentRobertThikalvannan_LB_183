@@ -71,42 +71,5 @@ Der Code ohne SQL Injection:
 
 Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
-### Security Code Review
 
-#### Motivation:
-
-- Security Code Review bezieht sich auf die Überprüfung von Softwareanwendungen, um Sicherheitslücken zu identifizieren und zu beheben. Dies umfasst den Code, die Architektur und andere potenzielle Risiken.
-
-#### Manueller Code Review:
-
-- Regelmässige manuelle Code Reviews sind entscheidend für die Sicherheitsüberprüfung.
-- Sie können Teile oder die gesamte Applikation abdecken.
-- Statische Testmethode, bei der Entwickler und Sicherheitsexpert potenzielle Schwachstellen, Eingabevalidierung, Authentifizierungsmethoden usw. überprüfen.
-- Die Reviewer sollte die Applikation, den Kontext, die Programmiersprache und Sicherheitsaspekte gut kennen.
-
-#### Automatisierte Sicherheitsprüfungen:
-
-- Neben manuellen Reviews sollten automatisierte Sicherheitsprüfungen durchgeführt werden
-- Tools und Scanner identifizieren bekannte Schwachstellen und Konfigurationsfehler.
-- Ergebnisse müssen genau überprüft werden, da nicht alle Hinweise korrekt sein könnten (false positive).
-  
-#### Architektur Reviews
-
-- Architektur ist wichtig für die Sicherheitsüberprüfung
-- Experten prüfen die Gesamtarchitektur auf Schwachstellen und sicherheitsrelevante Designentscheidungen.
-- Der Datenfluss innerhalb der Anwendung wird verfolgt, um sicherzustellen, dass sensible Daten angemessen geschützt sind.
-
-#### Best Practices:
-
-- Sicherheitsreviews sollten regelmässig im Entwicklungszyklus durchgeführt werden
-- Checklisten gewährleisten ein konsistentes Vorgehen und verhindern das Vergessen von wichtigen Aspekten.
-- Alle gefundenen Sicherheitsprobleme müssen dokumentiert und verfolgt werden.
-
-### Pentest
-
-Pentesting, kurz für "Penetrationstests" ist, wo Experten nach Sicherheitsproblemen in Webapplikationen suchen. Ob das gut klappt, hängt davon ab, wie schlau die Experten sind. Aber hier ist die Sache: Wenn die nix finden, heisst das nicht, dass da wirklich keine Lücken sind.
-
-Vor dem eigentlichen Test liest man sich erstmal alles durch: das Pflichtenheft, den Code alles. Dann setzt man sich Ziele und fängt an zu analysieren. Das bedeutet Scans machen, um Schwachstellen zu finden. Was man findet, wird aufgeschrieben und dem Kunden gezeigt. Nachdem die Probleme gefixt wurden, macht man nochmal einen Test.
-
-Und ganz wichtig: Tools, aber die können Expertenwissen nicht ersetzen. Es gibt so Security-Scanner, die automatisch nach Lücken suchen.
 
