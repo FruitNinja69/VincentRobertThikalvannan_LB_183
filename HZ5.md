@@ -2,6 +2,8 @@
 
 Informationen für Auditing und Logging generieren. Auswertungen und Alarme definieren und implementieren.
 
+Logging 
+
 Im Code wird implementiert, dass bei falschen Benutzerdaten die Meldung "login failed for user '{request.Username}'" in der Konsole angezeigt wird. Wenn die Daten korrekt sind, wird die Meldung "login successful for user '{request.Username}'" angezeigt.
 
 Code:
@@ -45,6 +47,5 @@ Ich habe diese Handlungsziel umgesetzt, indem die Insecure App Logging informati
 ### Erklärung des Artefakts
 Wenn kein Benutzer gefunden wird, wird eine Warnung im Log erstellt, die besagt, dass die Anmeldung für den angegebenen Benutzer fehlgeschlagen ist, und es wird ein "Unauthorized"-Status zurückgegeben. Wenn ein Benutzer erfolgreich angemeldet ist, wird eine Log-Information für den erfolgreichen Anmeldevorgang erstellt, und es wird ein "Ok"-Status mit einem generierten Token zurückgegeben.
 
-### Kritische Beurteilung
-Bei diesen Handlungsziel habe ich neues gelernt, weil ich oft auch aus faulheit eine einfaches Passwort nehme ......
+
 
