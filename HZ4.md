@@ -52,4 +52,5 @@ Ich habe diese Handlungsziel umgesetzt, indem ich die Insecure App gegen den men
 Der Code-Abschnitt zeigt, wie das Programm vor einfachen Passwörtern, wie zum Beispiel "1234", geschützt ist. So wurde die Anwendung gegen die Verwendung von schwachen Passwörtern abgesichert.
 
 ### Kritische Beurteilung
-Bei diesen Handlungsziel habe ich neues gelernt, weil ich oft auch aus faulheit eine einfaches Passwort nehme ......
+
+Ich habe den "Human Factor" bisher nur auf die Passwortwahl angewendet. Allerdings gibt es auch andere Aspekte, die berücksichtigt werden sollten, wie beispielsweise die Anfälligkeit für Phishing. Dabei könnten Benutzer auf gefälschte Websites gelockt werden und versehentlich ihre Anmeldeinformationen preisgeben.
