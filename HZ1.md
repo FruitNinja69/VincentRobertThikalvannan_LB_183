@@ -1,5 +1,7 @@
 ## HZ1
 
+![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/4bddfc3b-8ec6-43b2-b496-15461175b4ca)
+
 ### Ransomware
 Ransomware ist eine bösartige Software, die darauf abzielt, die Daten eines Benutzers zu verschlüsseln oder den Zugriff darauf zu blockieren, um dann Lösegeld für die Wiederherstellung anzufordern.
 
@@ -32,3 +34,9 @@ Fake Stellenangebote locken über soziale Netzwerke und E-Mails mit unrealistisc
 - Seien Sie vorsichtig bei Jobangeboten, die eine Vorauszahlung verlangen
 
 Quellen: https://www.ncsc.admin.ch/ncsc/de/home/cyberbedrohungen.html 
+
+### Kritische Beurteilung
+Das sind nur die Top-Cyberbedrohungen des aktuellen Monats in der Schweiz. Es gibt noch viel mehr. In unserem Modul haben wir uns https://owasp.org/www-project-top-ten/ angeschaut. Dort befindet sich ein bekanntes Projekt, das die am weitesten verbreiteten Sicherheitslücken analysiert und eine Rangliste erstellt. Das geschieht nicht monatlich, sondern jährlich. Es ist jedoch auch eine ausgezeichnete Webseite für Cybersecurity.
+
+ 
+
