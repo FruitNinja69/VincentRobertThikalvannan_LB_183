@@ -47,13 +47,7 @@ Der Code ohne SQL Injection:
             string username = request.Username;
             string passwordHash = MD5Helper.ComputeMD5Hash(request.Password);
 
-            /*
-            // Lösungsansatz 1: Sauber interpoliertes SQL
-            User? user = _context.Users.FromSql($"SELECT * FROM Users WHERE username = {username} AND password = {passwordHash}")
-                .FirstOrDefault();
-            */
-
-            // Lösungsansatz 2: EntityFramework Where
+            // Lösungsansatz
             User? user = _context.Users
                 .Where(u => u.Username == username)
                 .Where(u => u.Password == passwordHash)
