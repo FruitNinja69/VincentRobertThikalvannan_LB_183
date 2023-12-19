@@ -42,3 +42,13 @@ Die meisten Menschen wählen ein einfaches Passwort wie zum Beispiel "1234". Dad
  }
 ```
 
+### Auswahl und Beschreibung der Artefakts
+Als Artefakt habe ich einen Teil des Codes aus der Insecure App genommen, der zeigt, wie die App gegen den menschlichen Faktor als Sicherheitslücke geschützt ist.
+
+### Nachweis der Zielreichung 
+Ich habe diese Handlungsziel umgesetzt, indem ich die Insecure App gegen den menschlichen Faktor geschützt habe.
+
+### Erklärung des Artefakts
+Der Code-Abschnitt zeigt, wie das Programm vor einfachen Passwörtern, wie zum Beispiel "1234", geschützt ist. So wurde die Anwendung gegen die Verwendung von schwachen Passwörtern abgesichert.
+
+### Kritische Beurteilung
