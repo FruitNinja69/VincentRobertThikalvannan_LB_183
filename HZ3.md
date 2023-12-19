@@ -99,6 +99,6 @@ Der erste Codeabschnitt überprüft, ob der Benutzer die Zwei-Faktor-Authentifiz
 Der zweite Codeabschnitt ermöglicht die Aktivierung der 2FA für einen Benutzer, indem ein neuer geheimer Schlüssel generiert und ein QR-Code erstellt wird. Im Erfolgsfall gibt er den QR-Code zurück.
 
 ### Kritische Beurteilung
-
+In meinem Projekt erkläre ich die Zwei-Faktor-Authentifizierung für sichere Anmeldungen und die Autorisierung bei der Delete-Funktion, um sicherzustellen, dass nur Admins bestimmte Aktionen ausführen können. Zusätzlich zeige ich die Anwendung von JWTs, die wir im Modul besprochen haben, als effizientes Mittel für Authentifizierung und Autorisierung in der Anwendung. Es besteht auch die Möglichkeit, beide Ansätze kombiniert zu verwenden.
 
 
