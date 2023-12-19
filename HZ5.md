@@ -2,7 +2,7 @@
 
 Informationen für Auditing und Logging generieren. Auswertungen und Alarme definieren und implementieren.
 
-Logging 
+### Logging 
 
 Im Code wird implementiert, dass bei falschen Benutzerdaten die Meldung "login failed for user '{request.Username}'" in der Konsole angezeigt wird. Wenn die Daten korrekt sind, wird die Meldung "login successful for user '{request.Username}'" angezeigt.
 
