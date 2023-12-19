@@ -4,7 +4,7 @@ Sicherheitslücken und ihre Ursachen in einer Applikation erkennen können. Gege
 ### SQL Injection
  In der Insecure App kann man mit Sql Injection sich als adminsator ausgeben ohne den Passwort zu kennen.
 
-Wenn man beim Einloggen den Benutzernamen nach "administrator" noch die Eingabe von "'--admin" erweitert und ein beliebiges Passwort eingibt, kann man sich als Administrator anmelden.
+Wenn man beim Einloggen den Benutzernamen nach "administrator" noch die Eingabe von "'--" erweitert und ein beliebiges Passwort eingibt, kann man sich als Administrator anmelden.
 
 ![image](https://github.com/FruitNinja69/VincentRobertThikalvannan_LB_183/assets/89131450/24290165-e643-49d2-8b5e-e1e9776850a2)
 
