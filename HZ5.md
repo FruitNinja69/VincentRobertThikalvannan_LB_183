@@ -47,5 +47,9 @@ Ich habe diese Handlungsziel umgesetzt, indem die Insecure App Logging informati
 ### Erklärung des Artefakts
 Wenn kein Benutzer gefunden wird, wird eine Warnung im Log erstellt, die besagt, dass die Anmeldung für den angegebenen Benutzer fehlgeschlagen ist, und es wird ein "Unauthorized"-Status zurückgegeben. Wenn ein Benutzer erfolgreich angemeldet ist, wird eine Log-Information für den erfolgreichen Anmeldevorgang erstellt, und es wird ein "Ok"-Status mit einem generierten Token zurückgegeben.
 
+### Kritische Beurteilung
+
+Ich habe mit meinem Artefakt das Logging nur für den Einloggprozess implementiert. Allerdings könnte man diese Logging auch auf andere Aspekte erweitern, wie beispielsweise bei den CRUD-Befehlen. Wenn Nutzer Änderungen vornehmen, wäre es nützlich festzuhalten, welcher Nutzer diese Änderungen vorgenommen hat.
+
 
 
