@@ -1,4 +1,5 @@
 ## HZ2
+Sicherheitslücken und ihre Ursachen in einer Applikation erkennen können. Gegenmassnahmen vorschlagen und implementieren können.
 
 ### SQL Injection
  In der Insecure App kann man mit Sql Injection sich als adminsator ausgeben ohne den Passwort zu kennen.
@@ -71,5 +72,17 @@ Der Code ohne SQL Injection:
 
 Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
+### Auswahl und Beschreibung der Artefakts
+Als Artefakt habe ich einen Teil des Codes aus der Insecure App genommen, der zeigt, wie die App auf SQL-Injection geschützt ist.
+
+### Nachweis der Zielreichung 
+Ich habe dieses Ziel erreicht,indem ich Sicherheitslücken und ihre Ursachen in einer Applikation erkennt habe und  Gegenmassnahmen implementiert habe ich mit SQL-Injection gezeigt.
+
+### Erklärung des Artefakts
+Der erste Code (mit SQL Injection) mischt Benutzereingaben direkt in die SQL-Abfrage, was gefährlich sein kann, weil böswillige Benutzer die Eingabe manipulieren können, um unerwünschte Dinge zu tun.
+
+Der zweite Code (ohne SQL Injection) benutzt sicherere Wege, um die Datenbank abzufragen. Er schützt vor solchen Angriffen, indem er kluge Methoden verwendet, die sicherer sind und die Anwendung besser vor möglichen Gefahren schützen.
+
+### Kritische Beurteilung
 
 
