@@ -78,4 +78,4 @@ Der zweite Code (ohne SQL Injection) benutzt sicherere Wege, um die Datenbank ab
 Daher ist es wichtig, seinen Code auf SQL-Injection zu überprüfen.
 
 ### Kritische Beurteilung
-Ich habe SQL-Injection erklärt und Maßnahmen dagegen implementiert, aber es gibt auch Cross-Site Scripting (XSS), das im Modul 183 behandelt wird und ähnlich funktioniert. Man kann in den Eingabefeldern JavaScript-Befehle eingeben, was eine häufige Sicherheitslücke darstellt.
+Ich habe SQL-Injection erklärt und Massnahmen dagegen implementiert, aber es gibt auch Cross-Site Scripting (XSS), das im Modul 183 behandelt wird und ähnlich funktioniert. Man kann in den Eingabefeldern JavaScript-Befehle eingeben, was eine häufige Sicherheitslücke darstellt.
