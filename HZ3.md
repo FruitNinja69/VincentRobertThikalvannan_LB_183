@@ -99,4 +99,4 @@ Der erste Codeabschnitt überprüft, ob der Benutzer die Zwei-Faktor-Authentifiz
 Der zweite Codeabschnitt ermöglicht die Aktivierung der 2FA für einen Benutzer, indem ein neuer geheimer Schlüssel generiert und ein QR-Code erstellt wird. Im Erfolgsfall gibt er den QR-Code zurück.
 
 ### Kritische Beurteilung
-Bei diesen Handlungsziel habe ich neues gelernt, weil ich oft auch aus faulheit eine einfaches Passwort nehme ......
+
